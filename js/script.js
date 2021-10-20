@@ -2,8 +2,14 @@
 "use strict"
 const amburg = document.querySelector("#checkd-box");
 const nav = document.querySelector(".header-nev-menu");
+const main = document.querySelector(".main-index")
 amburg.checked = false
 nav.classList.add("header-nev-menu-left")
+main.addEventListener("click", e =>{
+    e.stopPropagation()
+    nav.classList.add("header-nev-menu-left")
+    amburg.checked = false
+})
 amburg.addEventListener("click", e =>{
     e.stopPropagation()
     if(amburg.checked){
@@ -11,7 +17,5 @@ amburg.addEventListener("click", e =>{
     }else{
         nav.classList.add("header-nev-menu-left")
     }
-    console.log("Clicol")
 })
-nav.classList.add("header-nev-menu-left")
-})()
+})();
