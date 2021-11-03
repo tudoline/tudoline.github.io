@@ -1,0 +1,50 @@
+.main-indexmain-index{
+    margin-bottom: 2em;
+}
+.main-index h2:nth-child(1){
+    font-size: 1em;
+    text-align: center;
+    /* background-color: red; */
+    padding: .2em 0;
+}
+.cards{
+    padding: .5em 0;
+    background-color: var(--header-0);
+    color: var(--title-3);
+}
+.cards img{
+    max-width: 80%;
+    margin: auto;
+}
+.title{
+    padding: .5em 0  0 1em;
+    font-size: 1em;
+}
+.title h2:nth-child(1){
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .main-index h2:nth-child(1){
+        font-size: 1.5em;
+        
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: .5em;
+    }
+    .cards img{
+        max-width: 70%;
+        align-self: end;
+    }
+    .button-click{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        font-size: 1.5em;
+    }
+    .title{
+        align-self: center;
+        padding-right: .5em;
+        font-size: 1.5em;
+    }
+}
