@@ -6,6 +6,11 @@ class Controller{
     ini(){
         this.body.classList.add("js")
         this.menuAmburg()
+        // this.videoYoutube()
+    }
+    videoYoutube(){
+        // let logoY = document.querySelector(".ytp-title-text")
+        // logoY.style.display = "none"
     }
     menuAmburg(){
         let input = document.getElementById("menu")
