@@ -8,31 +8,20 @@ class Controller{
         this.menuAmburg()
     }
     menuAmburg(){
-        if(!this.body.className == "js"){
-            return
-        }
-        let buttons = document.getElementById("menu");
-        let navEl = document.getElementsByClassName("menu-navegator")[0]
-        buttons.checked = false;
+        let input = document.getElementById("menu")
+        let navEl = this.body.querySelector("nav")
+        
+        input.checked = false
+
         navEl.classList.add("menu-none")
-        buttons.addEventListener("click", e =>{
-            e.stopPropagation()
-            if(buttons.checked){
+
+        document.querySelector(".menu-amburg label").addEventListener("click",e =>{
+            e.stopPropagation();
+            if(!input.checked){
                 navEl.classList.remove("menu-none")
-                console.log(navEl)
-                console.log(navEl)
-                console.log(buttons.checked)
             }else{
                 navEl.classList.add("menu-none")
-                // navEl.style.display = "none"
-                console.log(buttons.checked)
             }
-        });
-        document.addEventListener("click", e =>{
-            e.stopPropagation()
-            navEl.classList.add("menu-none")
-            buttons.checked = false
         })
-
     }
 }
