@@ -18,6 +18,24 @@ body{
     max-width: 1366px;
     margin: auto;
 }
+.verific::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    margin: 0 .5em;
+    border-radius: 0 1px 1px 0;
+    border: solid 3px violet;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+}
+.space{
+    margin: .5em 0;
+}
+.space-left-right{
+    margin: .5em;
+}
 img{
     width: 100%;
     display: block;

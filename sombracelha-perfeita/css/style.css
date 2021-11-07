@@ -1,0 +1,351 @@
+main{
+    padding: 1em;
+}
+.through{
+    text-decoration-line: line-through;
+    font-weight: 600;
+}
+.js-preco{
+    font-weight: 900;
+    color: red;
+    cursor: pointer;
+    transition:all .5s ease;
+}
+.js-preco:hover{
+    text-decoration: underline;
+}
+.video-red{
+    width: 100%;
+    margin: .5em auto;
+}
+.js-button{
+    text-align: center;
+}
+.js-00{
+    margin: .5em 0;
+}
+.js-00-title{
+    padding: .5em 1em;
+}
+.js-alunos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.js-aluno-index{
+    background-color:transparent;
+    padding: .1em;
+}
+.js-aluno-index h2:nth-child(1){
+    /* background-color: red; */
+    font-size: 1em;
+    padding: .1em 0;
+    text-align: center;
+}
+.js-alinos-img{
+    overflow: hidden;
+    margin: .5em;
+}
+.js-alinos-img img{
+    transition: all .5s linear;
+    object-fit: cover;
+}
+.js-alinos-img img:hover{
+    transform: scale(1.1);
+}
+.js-icons{
+    /* background-color: blue; */
+    line-height: 1.5;
+}
+.js-icons h2:nth-child(1){
+    text-align: center;
+}
+.icon-ion{
+    font-size: 5em;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    transition: all .5s linear;
+    text-align: center;
+    color: violet;
+}
+.icon-ion:hover{
+    transform: scale(1.1);
+    
+}
+.js-icons-icons article{
+    padding: .5em;
+    box-shadow: 2px 3px 2px var(--header-5);
+}
+.js-icons-icons article h2{
+    text-align: center;
+    line-height: 2;
+    color: var(--header-2);
+}
+.js-gallery img{
+    margin: .2em 0;
+}
+.js-gallery-title{
+    background-color: var(--header-1);
+    margin: 1em 0;
+    padding: .5em;
+}
+.js-gallery-title h2{
+    /* background-color: red; */
+    padding: .5em 0;
+    text-align: center;
+}
+.js-list ul{
+    list-style: none;
+}
+.js-list h1{
+    /* background-color: red; */
+    padding: .5em 0;
+}
+.js-h2{
+    padding: .5em 0;
+    color: var(--header-2);
+}
+.js-bonus-card{
+    /* border: 1px solid var(--header-5); */
+    background-color: beige;
+    border-radius: .5em;
+    padding: .5em;
+}
+.js-bonus-card h2{
+    text-align: center;
+    padding: .5em 0;
+}
+.js-bonus-card-img{
+    border-radius: 50%;
+    width: 200px;
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.js-bonus-card-img:hover{
+    transform: scale(1.1);
+}
+.js-001{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/banner-sobrancelhas.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.js-001::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.8);
+}
+.js-001-title{
+    position: absolute;
+    top: 0;
+    color: var(--title-3);
+    padding: .1em;
+    font-size: 1em;
+}
+.js-001-title h2{
+    text-align: center;
+    padding: .1em;
+}
+.js--001-certificado h2{
+    text-align: center;
+    padding: .5em 0;
+}
+.js-002{ 
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+.js-002-img img{
+    border-radius: 50%;
+    width: 300px;
+    background-color: violet;
+}
+.js-002-img h1,h2{
+    text-align: center;
+    line-height: 2;
+}
+.js-002-title{
+    line-height: 1.5;
+}
+.js-003-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: black; */
+    padding: 1em;
+}
+.js-003-img img{
+    width: 300px;
+    margin: .5em 0;
+}
+.js-004-img img{
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.js-004-img a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.js-004 p{
+    text-align: center;
+}
+.js-004-img a span{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--header-5);
+    font-weight: 600;
+}
+ion-icon{
+    padding-right: 1em;
+    font-size: 2em;
+}
+.fooeter-index{
+    padding: 1em 0;
+}
+.fooeter-index p{
+    text-align: center;
+}
+@media screen and (min-width:600px){
+    .js-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .js-gallery img{
+        width: 400px;
+
+    }
+    .js-icons-icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .js-icons-icons article{
+        width: calc(300px - .5em);
+        height: 300px;
+        align-self: flex-start;
+    }
+    .js--001-certificado img{
+        max-width: 60%;
+        margin: auto;
+    }
+    .js--001-certificado p{
+        width: 60%;
+        margin: auto;
+        padding: .5em 0;
+    }
+    .js-002{
+        display: flex;
+    }
+    .js-002-img{
+        width: 100%;
+        margin-right: .5em;
+    }
+    .js-002-title{
+        width: 100%;
+        margin-left: .5em;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .js-main-index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+        background-color: var(--header-0);
+        color:var(--title-3);
+        padding: .5em;
+    }
+    .video-red{
+        align-self: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .js-title{
+        padding: 0 .5em 0 1em;
+        align-self: center;
+    }
+    .js-button{
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    .js-00{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    .js-00img img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .js-00-title{
+        align-self: center;
+    }
+    .js-alinos-img img{
+        max-width: 300px;
+        height: 300px;
+    }
+    .js-aluno-index h2:nth-child(1){
+        /* background-color: red; */
+        font-size: 1.5em;
+        padding: .3em;
+        text-align: center;
+    }
+    .js-card-flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .js-bonus-card{
+        width: 400px;
+    }
+    .js-001-title{
+       width: 90%;
+       top: 25%;
+       left: 25%;
+       transform: translate(-25%, -25%);
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    .js-00img{
+        max-width: 70%;
+        margin: auto;
+    }
+    .js-list ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .js-list h1{
+        text-align: center;
+    }
+    .js-list p{
+        padding: .5em 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .js-00img{
+        max-width: 60%;
+        margin: auto;
+    }
+}
