@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fundo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+body::before{
+    content: "";
+    display: block;
+    background-color: #000000cc;
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.container{
+    /* background-color: beige; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+}
+header h2{
+    text-align: center;
+    color: #ffffff8f;
+    padding: .5em 0;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+.logo-girls{
+    max-width: 150px;
+    margin: 1em auto;
+    border-radius: 50%;
+    outline: 2px solid #80000033;
+    overflow: hidden;
+}
+.logo-girls img{
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+.logo-girls img:hover{
+    transform: scale(1.1);
+}
+.sociais{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: .5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px;
+}
+.sociais button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sociais p{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 22px;
+}
+.icons{
+    font-size: 30px;
+    padding: 0 .1em;
+}
+.icons-redes-social{
+    color: violet;
+}
+.icons-seguir{
+    color: blue;
+}
+.img-logo{
+    width: 45px;
+    height: 45px;
+    margin-left: .3em;
+}
+@media screen and (min-width: 600px) { 
+    .redes-sociais{
+        padding: .5em;
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .redes-sociais{
+       max-width: 1366px;
+       margin: auto;
+    }
+}
