@@ -9,7 +9,7 @@ class Controller{
             const dataset = e.target.getAttribute("dataset");
             if(!dataset) return
             const creatLink = {
-                seduction: () =>{
+                seductionEl: () =>{
                     location.assign("https://go.hotmart.com/O55128576I")
                 },
                 dotado: () =>{
@@ -20,14 +20,12 @@ class Controller{
                 },
                 facebook: () =>{
                     location.assign("https://www.facebook.com/mulheerebonita")
-                    console.log("click No Facebook")
                 },
                 instagram: () =>{
-                    console.log("click No Instagram")
                     location.replace("https://www.instagram.com/belasmulhers100/")
                 },
                 twiter: () =>{
-                    console.log("click No twiter")
+                    return
                 }
             }
             if(creatLink[dataset]) creatLink[dataset]();
