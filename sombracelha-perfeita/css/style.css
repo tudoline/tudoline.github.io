@@ -63,17 +63,16 @@ main{
 }
 .icon-ion{
     font-size: 5em;
-    overflow: hidden;
     display: block;
     margin: auto;
+    padding: 0;
     transition: all .5s linear;
-    text-align: center;
     color: violet;
 }
 .icon-ion:hover{
     transform: scale(1.1);
-    
 }
+
 .js-icons-icons article{
     padding: .5em;
     box-shadow: 2px 3px 2px var(--header-5);
