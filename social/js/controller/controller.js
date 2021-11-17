@@ -4,11 +4,14 @@ class Controller{
         this.linksDom();
     }
     linksDom(){
-        console.log(this.article.addEventListener("click", e =>{
+        this.article.addEventListener("click", e =>{
             e.stopPropagation()
             const dataset = e.target.getAttribute("dataset");
             if(!dataset) return
             const creatLink = {
+                seduction: () =>{
+                    location.assign("https://go.hotmart.com/O55128576I")
+                },
                 dotado: () =>{
                     location.assign("http://mon.net.br/1f8mti")
                 },
@@ -29,6 +32,6 @@ class Controller{
             }
             if(creatLink[dataset]) creatLink[dataset]();
             console.log(dataset)
-        }))
+        })
     }
 }

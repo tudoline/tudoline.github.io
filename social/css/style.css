@@ -99,6 +99,7 @@ header h2{
 .ajusta-links{
     text-decoration: none;
     color: transparent;
+    z-index: 100;
 }
 @media screen and (min-width: 600px) { 
     .redes-sociais{
