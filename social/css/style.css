@@ -96,11 +96,6 @@ header h2{
     height: 45px;
     margin-left: .3em;
 }
-.ajusta-links{
-    text-decoration: none;
-    color: transparent;
-    z-index: 100;
-}
 @media screen and (min-width: 600px) { 
     .redes-sociais{
         padding: .5em;
