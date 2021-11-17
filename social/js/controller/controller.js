@@ -29,7 +29,6 @@ class Controller{
                 }
             }
             if(creatLink[dataset]) creatLink[dataset]();
-            console.log(dataset)
         })
     }
 }
